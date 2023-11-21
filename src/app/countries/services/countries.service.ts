@@ -23,6 +23,19 @@ const url=`${this.apiUrl}/capital/${term}`;
 
         );
     }
+    searchCountry(term: string): Observable<Country[]>{
+
+      const url=`${this.apiUrl}/name/${term}`;
+      return this.http.get<Country[]>(url)
+      .pipe(
+        catchError(() => ([])) );
+    }
+    searchRegion(region: string): Observable<Country[]>{
+      const url=`${this.apiUrl}/region/${region}`;
+      return this.http.get<Country[]>(url)
+      .pipe(
+        catchError(() => ([])) );
+    }
 
 
 }
