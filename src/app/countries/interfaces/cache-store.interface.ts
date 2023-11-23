@@ -1,4 +1,5 @@
 import { Country } from "./country";
+import { Region } from "./region.type";
 
 export interface CacheStore{
   byCapital: TermCountries;
@@ -10,6 +11,6 @@ term: string;
 countries: Country[];
 }
 export interface RegionCountries{
-  region?: string;
+  region?: Region;
   countries: Country[];
 }
