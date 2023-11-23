@@ -3,7 +3,7 @@ import { Country } from '../../interfaces/country';
 import { CountriesService } from '../../services/countries.service';
 import { Region } from '../../interfaces/region.type';
 
-
+//type Region = 'Africa'|'America'|'Asia'|'Europa'|'oceania';
 @Component({
   selector: 'app-by-region-page',
   templateUrl: './by-region-page.component.html',
